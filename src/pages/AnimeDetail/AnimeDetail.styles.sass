@@ -1,0 +1,61 @@
+@import '../../styles/variables'
+
+.anime-detail 
+  display: flex
+  justify-content: center
+  align-items: center
+
+  .detail-content 
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+    padding: 20px
+    gap: 20px
+
+    .image-container 
+      display: flex
+      justify-content: center
+      align-items: center
+
+      img 
+        height: auto
+        border-radius: $card-border-radius
+
+
+    .trailer-container 
+      flex: 1
+
+      iframe 
+        width: 100%
+        max-width: 600px
+        height: auto
+        aspect-ratio: 16 / 9
+        border: none
+
+  h1 
+    font-size: 2rem
+    color: $secondary-color
+    margin-bottom: 10px
+  
+
+  h2, h3, h4 
+    color: $secondary-color
+    margin-top: 15px
+  
+
+  p 
+    color: $secondary-color
+    line-height: 1.5
+  
+
+  ul 
+    list-style-type: none
+    padding-left: 0
+
+    li 
+      background-color: $primary-color
+      padding: 5px
+      border-radius: $card-border-radius
+      margin-bottom: 5px
+      color: $secondary-color

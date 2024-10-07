@@ -1,0 +1,55 @@
+@import '../../styles/variables'
+
+.anime-card 
+  background-color: $primary-color
+  border: 1px solid #ccc
+  border-radius: $card-border-radius
+  margin: 10px
+  width: 200px
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+  transition: transform 0.2s
+
+  &:hover 
+    transform: scale(1.05)
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2)
+  
+
+  img 
+    width: 100%
+    border-top-left-radius: $card-border-radius
+    border-top-right-radius: $card-border-radius
+  
+
+  h3 
+    font-size: 1.2rem
+    color: $secondary-color
+    padding: 10px
+    text-align: center
+  
+
+  p 
+    font-size: 0.9rem
+    padding: 0 10px
+    color: $secondary-color
+    text-align: justify
+
+  button 
+    background-color: $accent-color
+    color: white
+    border: none
+    border-radius: $card-border-radius
+    padding: 8px
+    margin-bottom: 10px
+    margin-left: 10px
+    cursor: pointer
+
+    &:hover 
+      background-color: darken($accent-color, 10%)
+    
+
+    &:last-child 
+      margin-bottom: 20px
+       
+    a 
+      color: white
+      text-decoration: none
